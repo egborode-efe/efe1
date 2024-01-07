@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+:root {
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  font-family: "League Spartan", sans-serif;
+}
+.container {
+  max-width: 1000px;
+  width: 90%;
+  margin: 50px auto;
+  background-color: var(--White);
+}
+.top {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding: 50px 100px;
+  z-index: 2;
+}
+.top > img {
+  z-index: 1;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.inner {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  background-color: var(--Light-Grayish-Magenta);
+  position: relative;
+  justify-content: center;
+}
+
+.inner2 {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  background-color: var(--Light-Grayish-Magenta);
+  justify-content: center;
+  right: -20px;
+  position: relative;
+}
+.inner3 {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  background-color: var(--Light-Grayish-Magenta);
+  position: relative;
+  justify-content: center;
+  right: -50px;
+  top: 0px;
+}
+.left h1 {
+  color: var(--Very-Dark-Magenta);
+  font-size: 45px;
+}
+.left p {
+  color: var(--Dark-Grayish-Magenta);
+  font-size: 15px;
+}
+h3 {
+  color: var(--Very-Dark-Magenta);
+}
+.down {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding-bottom: 30px;
+  padding: 50px 100px;
+  margin: 0 auto;
+}
+.down > img {
+  position: absolute;
+  right: 30px;
+  bottom: 10px;
+}
+
+.first {
+  background-color: var(--Very-Dark-Magenta);
+  padding: 30px;
+  border-radius: 12px;
+}
+.first > p {
+  color: var(--White);
+  font-size: 16px;
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.first img {
+  border-radius: 100%;
+  width: 40px;
+}
+.first1 {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 15px;
+}
+.first2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.second {
+  background-color: var(--Very-Dark-Magenta);
+  padding: 30px;
+  border-radius: 12px;
+  position: relative;
+  bottom: -15px;
+}
+.second > p {
+  color: var(--White);
+  font-size: 16px;
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.second img {
+  border-radius: 100%;
+  width: 30px;
+}
+.second1 {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 15px;
+}
+
+.second2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.third {
+  background-color: var(--Very-Dark-Magenta);
+  /* padding: 20px; */
+  border-radius: 12px;
+  margin: 0 auto;
+  padding-top: 20px;
+  position: relative;
+  bottom: -30px;
+}
+.third > p {
+  color: var(--White);
+  font-size: 16px;
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.third img {
+  border-radius: 100%;
+  width: 30px;
+}
+.third1 {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  gap: 10px;
+  padding-bottom: 15px;
+}
+.third2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.an {
+  color: var(--Soft-Pink);
+}
+.on {
+  color: var(--White);
+}
+@media (width<600px) {
+  .top {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .inner,
+  .inner2,
+  .inner3 {
+    position: unset;
+  }
+  .down {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .third {
+    padding-bottom: 20px;
+  }
+}
